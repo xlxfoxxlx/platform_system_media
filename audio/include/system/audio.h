@@ -335,6 +335,7 @@ typedef enum {
     AUDIO_FORMAT_SBC                 = 0x20000000UL,
     AUDIO_FORMAT_APTX                = 0x21000000UL,
     AUDIO_FORMAT_APTX_HD             = 0x22000000UL,
+    AUDIO_FORMAT_AC4                 = 0x23000000UL,
 
     AUDIO_FORMAT_DOLBY_TRUEHD        = 0x0E000000UL,
     AUDIO_FORMAT_MAIN_MASK           = 0xFF000000UL, /* Deprecated. Use audio_get_main_format() */
@@ -1564,6 +1565,7 @@ static inline bool audio_is_valid_format(audio_format_t format)
     case AUDIO_FORMAT_OPUS:
     case AUDIO_FORMAT_AC3:
     case AUDIO_FORMAT_E_AC3:
+    case AUDIO_FORMAT_AC4:
     case AUDIO_FORMAT_DTS:
     case AUDIO_FORMAT_DTS_HD:
     case AUDIO_FORMAT_IEC61937:
